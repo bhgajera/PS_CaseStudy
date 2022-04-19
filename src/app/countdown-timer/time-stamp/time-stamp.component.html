@@ -1,0 +1,12 @@
+
+
+  <div class="card" >
+    <div class="card-header">
+        Time Stamp
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let time of timeStamp; let i = index">
+            {{time.name}} at {{time.date | date:'dd-MM-yyy HH:mm:ss'}}
+        </li>
+    </ul>
+  </div>

@@ -1,0 +1,47 @@
+.banner-image {
+  position: relative;
+  height: calc(100vh - 65px);
+}
+.banner-image .hidden {
+  display: none;
+}
+
+
+.banner-text {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+
+
+.floating-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 45px;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+  .floating-text span {
+    
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    transform: translateY(-20px);
+    display: inline-block;
+  }
+  .floating-text span:empty {
+      width: 20px;
+  }
+  
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }

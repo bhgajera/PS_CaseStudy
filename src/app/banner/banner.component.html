@@ -1,0 +1,11 @@
+<div class="banner-image">
+    <img class="hidden" #img src="../../assets/images/Home-Four-Banner-Background-Image.png">
+    <div class="banner-text" [style.background-image]="'url('+img.src+')'" >
+    
+      <div class="floating-text">
+        <ng-container *ngFor="let latter of floatingTextArry;let i = index;">
+         <span [style]="'--i:'+i"  >{{latter.trim()}}</span>
+        </ng-container>
+      </div>
+    </div>
+  </div>

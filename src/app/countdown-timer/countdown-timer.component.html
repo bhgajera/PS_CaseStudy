@@ -1,0 +1,20 @@
+
+<div class="container counter-container">
+<div class="row">
+    <div class="col-6">
+        <app-display-timer [timerData]="timerData"  ></app-display-timer>
+    </div>
+    <div class="col-6">
+        <app-timer-buttons (startTimer)="startCountDown($event)" (stopTimer)="stopCountDown($event)" ></app-timer-buttons>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <app-time-stamp [timeStamp]="timeStamp" ></app-time-stamp>
+    </div>
+    <div class="col-6">
+        <app-click-track [clickData]="clickData" ></app-click-track>
+    </div>
+</div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container student-container">
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <!-- <th (click)="shortColumn(student.key)" *ngFor="let student of studentList[0] | keyvalue">{{student.key}}</th> -->
+        <!-- <th [appSort]="studentList"(updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" [attr.data-name]="student.key" scope="col" *ngFor="let student of studentList[0] | keyvalue">{{student.key}}</th> -->
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault"  data-order="asc" data-name="rollNo" scope="col">rollNo</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="name" scope="col">name</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="english" scope="col">english</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="mathematics" scope="col">mathematics</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="biology" scope="col">biology</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="chemistry" scope="col">chemistry</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="psychology" scope="col">psychology</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="sociology" scope="col">sociology</th>
+        <th [appSort]="studentList" (updateSort)="updateList($event)" [defaultData]="studentDefault" data-order="asc" data-name="geography" scope="col">geography</th> 
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of studentList; let i = index">
+        <td >{{student.rollNo}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.english}} </td>
+        <td>{{student.mathematics}} </td>
+        <td>{{student.biology}} </td>
+        <td>{{student.chemistry}} </td>
+        <td>{{student.psychology}} </td>
+        <td>{{student.sociology}} </td>
+        <td>{{student.geography}}</td>
+    </tr>
+</tbody>
+</table>
+</div>

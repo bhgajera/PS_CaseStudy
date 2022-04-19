@@ -1,0 +1,11 @@
+<div class="card" >
+    <div class="card-header">
+        Count Down Timer
+    </div>
+    <div class="card-body">
+        <h4 *ngIf="timerData | async as timer; else noTimer">{{timer}}</h4>
+        <ng-template #noTimer>
+            <h4  >Timer is completed / stoped</h4>
+          </ng-template>
+    </div>
+  </div>

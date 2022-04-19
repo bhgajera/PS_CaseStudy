@@ -1,0 +1,22 @@
+<div class="timer-button"></div>
+
+<div class="card">
+  <div class="card-header">Count Down Timer</div>
+  <div class="card-body">
+    <form [formGroup]="timerForm" #myForm="ngForm">
+        <div class="mb-3">
+        <label class="form-label" for="timer">Enter timer Limit</label>
+        <input
+          type="number"
+          class="form-control"
+          formControlName="timer"
+          id="timer"
+        />
+      </div>
+      <button class="btn btn-danger me-3" (click)="timerSubmit()">
+        Start/Pause
+      </button>
+      <button class="btn btn-danger btn-md" (click)="resetForm()">Reset</button>
+    </form>
+  </div>
+</div>

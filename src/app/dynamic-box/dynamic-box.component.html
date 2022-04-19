@@ -1,0 +1,6 @@
+<div class="page-wrapper">
+  <div class="box" *ngFor="let box of boxList; let i = index">
+      <span class="badge bg-danger">{{i + 1}}</span>
+    <button class="btn btn-danger" (click)="alertBox(i+1)">click</button>
+  </div>
+</div>
